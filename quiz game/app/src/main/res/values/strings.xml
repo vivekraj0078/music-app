@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">Quiz Game</string>
+
+    <string name="question1title">Question 1</string>
+
+    <string name="question2title">Question 2</string>
+
+    <string name="question3title">Question 3</string>
+
+    <string name="question4title">Question 4</string>
+
+    <string name="question5title">Question 5</string>
+
+    <string name="question1">Which of the Following colours present in Rainbow ?</string>
+
+    <string name="answerRed">Red</string>
+
+    <string name="answerPink">Pink</string>
+
+    <string name="answerViolet">Violet</string>
+
+    <string name="question2">When were the first recorded Olympics held ?</string>
+
+    <string name="answer825BC">825 BC</string>
+
+    <string name="answer776BC">776 BC</string>
+
+    <string name="answer320BC">320 BC</string>
+
+    <string name="question3">The Term \'Beamer\' is associated with?</string>
+    <string name="hint">Right the answer</string>
+
+    <string name="question4">Eden Garden (Kolkata) is Associated with ? </string>
+
+    <string name="answerCricket">Cricket</string>
+    <string name="answerHockey">Hockey</string>
+    <string name="answerBasketBall">Basket Ball</string>
+
+    <string name="question5">which of the following Movie is created by Akshay Kumar ?</string>
+    <string name="answerHousefull">Housefull 4</string>
+
+    <string name="answerSpecial36">Special 36</string>
+
+    <string name="answerKesari">Kesari</string>
+
+    <string name="submit">Submit</string>
+    <string name="playAgain">Play Again</string>
+
+
+
+
+</resources>
