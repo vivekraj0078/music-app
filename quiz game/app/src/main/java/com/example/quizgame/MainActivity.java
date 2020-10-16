@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         submit = (Button) findViewById(R.id.submitButton);
-        //call submitButton to sumbit your answer
         submit.setOnClickListener(submitButtonOnClickListener);
     }
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         boolean isQRedChecked = questionRed.isChecked();
         boolean isQVoiletChecked = questionVoilet.isChecked();
         boolean isQPinkChecked = questionPink.isChecked();
-       // checking 1st question is correct or not
+
         if (isQRedChecked && isQVoiletChecked && !isQPinkChecked) {
             correctAnswers += 1;
         }
@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
     private void checkQuestionTwoAnswers() {
         RadioButton radioButton765BC = (RadioButton) findViewById(R.id.radio_776BC);
         boolean isQ765BCChecked = radioButton765BC.isChecked();
-         // checking 2nd question is correct or not
         if (isQ765BCChecked) {
             correctAnswers += 1;
         }
@@ -54,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkQuestionThreeAnswer() {
         String cricket = getQuestionThreeUserInput();
-         // checking 3rd question is correct or not
         if (cricket.trim().equalsIgnoreCase("cricket")) {
             correctAnswers += 1;
         }
@@ -63,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
     private void checkQuestionFourAnswers() {
         RadioButton radioButtoncricket = (RadioButton) findViewById(R.id.radio_cricket);
         boolean isQChecked = radioButtoncricket.isChecked();
-        // checking 4th question is correct or not 
         if (isQChecked) {
             correctAnswers += 1;
         }
@@ -76,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         boolean isQHousefullChecked = qHousefull.isChecked();
         boolean isQSpecailChecked = qSpecial.isChecked();
         boolean isQKesariChecked = qKesari.isChecked();
-          // checking 5th question is correct or not
+
         if (isQHousefullChecked && isQSpecailChecked && isQKesariChecked) {
             correctAnswers += 1;
         }
@@ -100,12 +97,8 @@ public class MainActivity extends AppCompatActivity {
             checkAllQuestions();
             if (correctAnswers == 0) {
                 Toast.makeText(MainActivity.this, "POOR PLAYED SCORED = 0", Toast.LENGTH_SHORT).show();
-            } else if(correctAnswers <=3) {
-                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/5" + "GOOD PLAYED",
-                        Toast.LENGTH_LONG).show();
-                resetCounterCorrectAnswers();
-            }else if(){
-                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/5" + "EXCELLENT PLAYED",
+            } else {
+                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/5",
                         Toast.LENGTH_LONG).show();
                 resetCounterCorrectAnswers();
             }
